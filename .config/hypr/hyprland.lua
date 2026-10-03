@@ -67,6 +67,9 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd([[sh -c 'while true; do hyprpaper; sleep 2; done']])
   hl.exec_cmd("wl-paste --watch cliphist store")
   hl.exec_cmd("sh -c '$HOME/.local/bin/audio-start.sh'")
+  
+  hl.exec_cmd("discord")
+  hl.exec_cmd("steam")
 end)
 
 -------------------------------

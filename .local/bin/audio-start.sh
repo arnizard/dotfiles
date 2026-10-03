@@ -14,7 +14,7 @@ openwave --hide &
 wait_for "openwave_fx"
 
 # 2. Carla with the saved chain (Wine plugins load slowly)
-pw-jack carla "$HOME/brutal.carxp" &
+pw-jack carla --no-gui "/mnt/seagate/!! Drivers - Importante/!! cachy/carla/brutal.carxp" &
 wait_for "Carla:audio-in1"
 
 # 3. Restore the links
