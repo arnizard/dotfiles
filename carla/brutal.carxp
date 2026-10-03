@@ -1,0 +1,488 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE CARLA-PROJECT>
+<CARLA-PROJECT VERSION='2.5'>
+ <EngineSettings>
+  <ForceStereo>true</ForceStereo>
+  <PreferPluginBridges>false</PreferPluginBridges>
+  <PreferUiBridges>true</PreferUiBridges>
+  <UIsAlwaysOnTop>false</UIsAlwaysOnTop>
+  <MaxParameters>200</MaxParameters>
+  <UIBridgesTimeout>4000</UIBridgesTimeout>
+ </EngineSettings>
+
+ <Transport>
+  <BeatsPerMinute>120</BeatsPerMinute>
+ </Transport>
+
+ <!-- RNNoise suppression for voice -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>RNNoise suppression for voice</Name>
+   <Binary>/home/a/.vst/yabridge/rnnoise_stereo.so</Binary>
+   <UniqueID>1382968881</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <DryWet>0.990196</DryWet>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x9</Options>
+
+   <Chunk>
+VkMyIdIAAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8Uk5Ob2lzZT48UEFSQU0gaWQ9InZhZF9ncmFjZV9wZXJpb2QiIHZhbHVl
+PSIyMC4wIi8+PFBBUkFNIGlkPSJ2YWRfcmV0cm9hY3RpdmVfZ3JhY2VfcGVyaW9kIiB2YWx1ZT0iMC4wIi8+PFBBUkFNIGlkPSJ2YWRfdGhyZXNob2xkIiB2
+YWx1ZT0iMC4wNTk5OTk5OTg2NTg4OTU0OSIvPjwvUk5Ob2lzZT4A
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Kuassa basiQ -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Kuassa basiQ</Name>
+   <Binary>/home/a/.vst/yabridge/basiQ.so</Binary>
+   <UniqueID>1264743249</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>1.27</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <CurrentProgramIndex>5</CurrentProgramIndex>
+   <CurrentProgramName>Nice Vocal</CurrentProgramName>
+
+   <Chunk>
+QktTQlEAAgBQS1NCUQACAERlZmF1bHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwAAAD8AAAA/AAAAP1BLU0JRAAIAQmFzcyBPSwAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAA/pHAdP5qZWT8AAAA/UEtTQlEAAgBLaWNrIEl0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK5HIT8AAIA+mplZPwAAAD9QS1NC
+UQACAEd1aXRhciBGYWNlAAAAAAAAAAAAAAAAAAAAAAAAAAAASOE6Px+FKz+kcB0/AAAAP1BLU0JRAAIATmljZSBWb2NhbAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AADNzCw/H4WrPgAAAD8AAAA/UEtTQlEAAgBTd2VldCBWb2NhbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/NzCw/AAAAPwAAAD9QS1NCUQACAENyeXN0YWwA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmplZPx+FKz/2KJw+AAAAP1BLU0JRAAIAUHJlc2VuY2UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/PQpXPj0K
+Fz8AAAA/UEtTQlEAAgBPcGVuIE1peAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALgeJT97FK4+MzMTPwAAAD9QS1NCUQACAEluaXQAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAPwAAAD8AAAA/AAAAP1BLU0JRAAIASW5pdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAPwAAAD8AAAA/UEtTQlEA
+AgBJbml0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8AAAA/AAAAPwAAAD8=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Kuassa basiQ -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Kuassa basiQ (2)</Name>
+   <Binary>/home/a/.vst/yabridge/basiQ.so</Binary>
+   <UniqueID>1264743249</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>0.828799</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <CurrentProgramIndex>3</CurrentProgramIndex>
+   <CurrentProgramName>Kick It</CurrentProgramName>
+
+   <Chunk>
+QktTQlEAAgBQS1NCUQACAERlZmF1bHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwAAAD8AAAA/AAAAP1BLU0JRAAIAQmFzcyBPSwAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAA/pHAdP5qZWT8AAAA/UEtTQlEAAgBLaWNrIEl0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK5HIT8AAIA+mplZPwAAAD9QS1NC
+UQACAEd1aXRhciBGYWNlAAAAAAAAAAAAAAAAAAAAAAAAAAAASOE6Px+FKz+kcB0/AAAAP1BLU0JRAAIATmljZSBWb2NhbAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AADNzCw/H4WrPgAAAD8AAAA/UEtTQlEAAgBTd2VldCBWb2NhbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/NzCw/AAAAPwAAAD9QS1NCUQACAENyeXN0YWwA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmplZPx+FKz/2KJw+AAAAP1BLU0JRAAIAUHJlc2VuY2UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/PQpXPj0K
+Fz8AAAA/UEtTQlEAAgBPcGVuIE1peAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALgeJT97FK4+MzMTPwAAAD9QS1NCUQACAEluaXQAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAPwAAAD8AAAA/AAAAP1BLU0JRAAIASW5pdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAPwAAAD8AAAA/UEtTQlEA
+AgBJbml0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8AAAA/AAAAPwAAAD8=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Kuassa basiQ -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Kuassa basiQ (3)</Name>
+   <Binary>/home/a/.vst/yabridge/basiQ.so</Binary>
+   <UniqueID>1264743249</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>1.089461</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0xd</Options>
+
+   <CurrentProgramIndex>8</CurrentProgramIndex>
+   <CurrentProgramName>Presence</CurrentProgramName>
+
+   <Chunk>
+QktTQlEAAgBQS1NCUQACAERlZmF1bHQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPwAAAD8AAAA/AAAAP1BLU0JRAAIAQmFzcyBPSwAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAA/pHAdP5qZWT8AAAA/UEtTQlEAAgBLaWNrIEl0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAK5HIT8AAIA+mplZPwAAAD9QS1NC
+UQACAEd1aXRhciBGYWNlAAAAAAAAAAAAAAAAAAAAAAAAAAAASOE6Px+FKz+kcB0/AAAAP1BLU0JRAAIATmljZSBWb2NhbAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AADNzCw/H4WrPgAAAD8AAAA/UEtTQlEAAgBTd2VldCBWb2NhbAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAID/NzCw/AAAAPwAAAD9QS1NCUQACAENyeXN0YWwA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmplZPx+FKz/2KJw+AAAAP1BLU0JRAAIAUHJlc2VuY2UAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAzMzM/PQpXPj0K
+Fz8AAAA/UEtTQlEAAgBPcGVuIE1peAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAALgeJT97FK4+MzMTPwAAAD9QS1NCUQACAEluaXQAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAPwAAAD8AAAA/AAAAP1BLU0JRAAIASW5pdAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/AAAAPwAAAD8AAAA/UEtTQlEA
+AgBJbml0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD8AAAA/AAAAPwAAAD8=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- LOVEND -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>LOVEND</Name>
+   <Binary>/home/a/.vst/yabridge/LOVEND_x64.so</Binary>
+   <UniqueID>1280267825</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x1</Options>
+
+   <Parameter>
+    <Index>0</Index>
+    <Name>Hz</Name>
+    <Value>0.120000012218952</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>1</Index>
+    <Name>dB</Name>
+    <Value>0.237745091319084</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>2</Index>
+    <Name>dB</Name>
+    <Value>0.459313720464706</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>3</Index>
+    <Name>Bypass</Name>
+    <Value>1</Value>
+   </Parameter>
+
+   <Parameter>
+    <Index>4</Index>
+    <Name>Oversampling</Name>
+    <Value>0</Value>
+   </Parameter>
+
+   <CurrentProgramIndex>1</CurrentProgramIndex>
+   <CurrentProgramName>Empty</CurrentProgramName>
+  </Data>
+ </Plugin>
+
+ <!-- Manipulator -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Manipulator</Name>
+   <Binary>/home/a/.vst/yabridge/Manipulator.so</Binary>
+   <UniqueID>1349930350</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f9</Options>
+
+   <Chunk>
+VkMyIUERAAA8TWFuaXB1bGF0b3IgQ2xvY2t3aXNlPSIwIiBSb3Rhcnk9IjEiIFNuYXA9IjEiIEdsaWRlTWlkaU9ubHk9IjAiIERldGVjdE1JREk9IjAuNSIg
+RGV0ZWN0UmFnZT0iMC41IiBTbG90NF9Qb3dlcj0iMCIgU2xvdDNfUG93ZXI9IjAiIFNsb3QyX1Bvd2VyPSIwIiBTbG90MV9Qb3dlcj0iMCIgU2xvdDRfU2Vs
+ZWN0PSIwLjc1IiBTbG90M19TZWxlY3Q9IjEiIFNsb3QyX1NlbGVjdD0iMCIgU2xvdDFfU2VsZWN0PSIwLjI1IiBTZXE0X1BhdHRlcm49IjAiIFNlcTNfUGF0
+dGVybj0iMCIgU2VxMl9QYXR0ZXJuPSIwIiBTZXExX1BhdHRlcm49IjAiIE1ldGFLbm9iND0iMCIgTWV0YUtub2IzPSIwIiBNZXRhS25vYjI9IjAiIE1ldGFL
+bm9iMT0iMCIgRGVidWc0PSIwIiBEZWJ1ZzM9IjAiIERlYnVnMj0iMCIgRGVidWcxPSIwIiBHYXRlX1JlbGVhc2U9IjAiIEdhdGVfQXR0YWNrPSIwIiBTZXE0
+X3ZhbHVlMTY9Ii0wLjM4MjY4MyIgU2VxNF92YWx1ZTE1PSItMC43MDcxMDcwMDAwMDAwMDAwNCIgU2VxNF92YWx1ZTE0PSItMC45MjM4NzkwMDAwMDAwMDAw
+MSIgU2VxNF92YWx1ZTEzPSItMSIgU2VxNF92YWx1ZTEyPSItMC45MjM4ODAwMDAwMDAwMDAwMyIgU2VxNF92YWx1ZTExPSItMC43MDcxMDcwMDAwMDAwMDAw
+NCIgU2VxNF92YWx1ZTEwPSItMC4zODI2ODMiIFNlcTRfdmFsdWU5PSIwIiBTZXE0X3ZhbHVlOD0iMC4zODI2ODMiIFNlcTRfdmFsdWU3PSIwLjcwNzEwNzAw
+MDAwMDAwMDA0IiBTZXE0X3ZhbHVlNj0iMC45MjM4ODAwMDAwMDAwMDAwMyIgU2VxNF92YWx1ZTU9IjEiIFNlcTRfdmFsdWU0PSIwLjkyMzg4MDAwMDAwMDAw
+MDAzIiBTZXE0X3ZhbHVlMz0iMC43MDcxMDcwMDAwMDAwMDAwNCIgU2VxNF92YWx1ZTI9IjAuMzgyNjgzIiBTZXE0X3ZhbHVlMT0iMCIgU2VxM192YWx1ZTE2
+PSItMC4zODI2ODMiIFNlcTNfdmFsdWUxNT0iLTAuNzA3MTA3MDAwMDAwMDAwMDQiIFNlcTNfdmFsdWUxND0iLTAuOTIzODc5MDAwMDAwMDAwMDEiIFNlcTNf
+dmFsdWUxMz0iLTEiIFNlcTNfdmFsdWUxMj0iLTAuOTIzODgwMDAwMDAwMDAwMDMiIFNlcTNfdmFsdWUxMT0iLTAuNzA3MTA3MDAwMDAwMDAwMDQiIFNlcTNf
+dmFsdWUxMD0iLTAuMzgyNjgzIiBTZXEzX3ZhbHVlOT0iMCIgU2VxM192YWx1ZTg9IjAuMzgyNjgzIiBTZXEzX3ZhbHVlNz0iMC43MDcxMDcwMDAwMDAwMDAw
+NCIgU2VxM192YWx1ZTY9IjAuOTIzODgwMDAwMDAwMDAwMDMiIFNlcTNfdmFsdWU1PSIxIiBTZXEzX3ZhbHVlND0iMC45MjM4ODAwMDAwMDAwMDAwMyIgU2Vx
+M192YWx1ZTM9IjAuNzA3MTA3MDAwMDAwMDAwMDQiIFNlcTNfdmFsdWUyPSIwLjM4MjY4MyIgU2VxM192YWx1ZTE9IjAiIFNlcTJfdmFsdWUxNj0iLTAuMzgy
+NjgzIiBTZXEyX3ZhbHVlMTU9Ii0wLjcwNzEwNzAwMDAwMDAwMDA0IiBTZXEyX3ZhbHVlMTQ9Ii0wLjkyMzg3OTAwMDAwMDAwMDAxIiBTZXEyX3ZhbHVlMTM9
+Ii0xIiBTZXEyX3ZhbHVlMTI9Ii0wLjkyMzg4MDAwMDAwMDAwMDAzIiBTZXEyX3ZhbHVlMTE9Ii0wLjcwNzEwNzAwMDAwMDAwMDA0IiBTZXEyX3ZhbHVlMTA9
+Ii0wLjM4MjY4MyIgU2VxMl92YWx1ZTk9IjAiIFNlcTJfdmFsdWU4PSIwLjM4MjY4MyIgU2VxMl92YWx1ZTc9IjAuNzA3MTA3MDAwMDAwMDAwMDQiIFNlcTJf
+dmFsdWU2PSIwLjkyMzg4MDAwMDAwMDAwMDAzIiBTZXEyX3ZhbHVlNT0iMSIgU2VxMl92YWx1ZTQ9IjAuOTIzODgwMDAwMDAwMDAwMDMiIFNlcTJfdmFsdWUz
+PSIwLjcwNzEwNzAwMDAwMDAwMDA0IiBTZXEyX3ZhbHVlMj0iMC4zODI2ODMiIFNlcTJfdmFsdWUxPSIwIiBTZXExX3ZhbHVlMTY9Ii0wLjM4MjY4MyIgU2Vx
+MV92YWx1ZTE1PSItMC43MDcxMDcwMDAwMDAwMDAwNCIgU2VxMV92YWx1ZTE0PSItMC45MjM4NzkwMDAwMDAwMDAwMSIgU2VxMV92YWx1ZTEzPSItMSIgU2Vx
+MV92YWx1ZTEyPSItMC45MjM4ODAwMDAwMDAwMDAwMyIgU2VxMV92YWx1ZTExPSItMC43MDcxMDcwMDAwMDAwMDAwNCIgU2VxMV92YWx1ZTEwPSItMC4zODI2
+ODMiIFNlcTFfdmFsdWU5PSIwIiBTZXExX3ZhbHVlOD0iMC4zODI2ODMiIFNlcTFfdmFsdWU3PSIwLjcwNzEwNzAwMDAwMDAwMDA0IiBTZXExX3ZhbHVlNj0i
+MC45MjM4ODAwMDAwMDAwMDAwMyIgU2VxMV92YWx1ZTU9IjEiIFNlcTFfdmFsdWU0PSIwLjkyMzg4MDAwMDAwMDAwMDAzIiBTZXExX3ZhbHVlMz0iMC43MDcx
+MDcwMDAwMDAwMDAwNCIgU2VxMV92YWx1ZTI9IjAuMzgyNjgzIiBTZXExX3ZhbHVlMT0iMCIgU2VxNF9SZXRyaWc9IjAiIFNlcTRfU3luYz0iMSIgU2VxM19S
+ZXRyaWc9IjAiIFNlcTNfU3luYz0iMSIgU2VxMl9SZXRyaWc9IjAiIFNlcTJfU3luYz0iMSIgU2VxMV9SZXRyaWc9IjAiIFNlcTFfU3luYz0iMSIgU2VxNF9T
+aGFwZT0iLTEiIFNlcTRfUmF0ZT0iMC4zMzgwMDAwMDAwMDAwMDAwMiIgU2VxM19TaGFwZT0iLTEiIFNlcTNfUmF0ZT0iMC4zMzgwMDAwMDAwMDAwMDAwMiIg
+U2VxMl9TaGFwZT0iLTEiIFNlcTJfUmF0ZT0iMC4zMzgwMDAwMDAwMDAwMDAwMiIgU2VxMV9TaGFwZT0iLTEiIFNlcTFfUmF0ZT0iMC4zMzgwMDAwMDAwMDAw
+MDAwMiIgTWlkaUNvbnRyb2w0PSIwIiBNaWRpQ29udHJvbDM9IjAiIE1pZGlDb250cm9sMj0iMCIgTWlkaUNvbnRyb2wxPSIwIiBFbnZlbG9wZTRfUmVsZWFz
+ZT0iMC4xMDAwMDAwMDAwMDAwMDAwMSIgRW52ZWxvcGU0X1N1c3RhaW49IjAuNSIgRW52ZWxvcGU0X0RlY2F5PSIwLjIwMDAwMDAwMDAwMDAwMDAxIiBFbnZl
+bG9wZTRfQXR0YWNrPSIwIiBFbnZlbG9wZTNfUmVsZWFzZT0iMC4xMDAwMDAwMDAwMDAwMDAwMSIgRW52ZWxvcGUzX1N1c3RhaW49IjAuNSIgRW52ZWxvcGUz
+X0RlY2F5PSIwLjIwMDAwMDAwMDAwMDAwMDAxIiBFbnZlbG9wZTNfQXR0YWNrPSIwIiBFbnZlbG9wZTJfUmVsZWFzZT0iMC4xMDAwMDAwMDAwMDAwMDAwMSIg
+RW52ZWxvcGUyX1N1c3RhaW49IjAuNSIgRW52ZWxvcGUyX0RlY2F5PSIwLjIwMDAwMDAwMDAwMDAwMDAxIiBFbnZlbG9wZTJfQXR0YWNrPSIwIiBFbnZlbG9w
+ZTFfUmVsZWFzZT0iMC4xMDAwMDAwMDAwMDAwMDAwMSIgRW52ZWxvcGUxX1N1c3RhaW49IjAuNSIgRW52ZWxvcGUxX0RlY2F5PSIwLjIwMDAwMDAwMDAwMDAw
+MDAxIiBFbnZlbG9wZTFfQXR0YWNrPSIwIiBGb2xsb3dlcjRfUmVsZWFzZT0iMC41IiBGb2xsb3dlcjRfQXR0YWNrPSIwLjIwMDAwMDAwMDAwMDAwMDAxIiBG
+b2xsb3dlcjNfUmVsZWFzZT0iMC41IiBGb2xsb3dlcjNfQXR0YWNrPSIwLjIwMDAwMDAwMDAwMDAwMDAxIiBGb2xsb3dlcjJfUmVsZWFzZT0iMC41IiBGb2xs
+b3dlcjJfQXR0YWNrPSIwLjIwMDAwMDAwMDAwMDAwMDAxIiBGb2xsb3dlcjFfUmVsZWFzZT0iMC41IiBGb2xsb3dlcjFfQXR0YWNrPSIwLjIwMDAwMDAwMDAw
+MDAwMDAxIiBNZXRhS25vYlVuaUJpND0iMSIgTWV0YUtub2JVbmlCaTM9IjEiIE1ldGFLbm9iVW5pQmkyPSIxIiBNZXRhS25vYlVuaUJpMT0iMSIgTWV0YUtu
+b2JTbmFwND0iMCIgTWV0YUtub2JTbmFwMz0iMCIgTWV0YUtub2JTbmFwMj0iMCIgTWV0YUtub2JTbmFwMT0iMCIgU2xvdDRfbW9kMz0iMCIgU2xvdDRfbW9k
+Mj0iMCIgU2xvdDRfbW9kMT0iMCIgU2xvdDNfbW9kND0iMCIgU2xvdDNfbW9kMj0iMCIgU2xvdDNfbW9kMT0iMCIgU2xvdDJfbW9kND0iMCIgU2xvdDJfbW9k
+Mz0iMCIgU2xvdDJfbW9kMT0iMCIgU2xvdDFfbW9kND0iMCIgU2xvdDFfbW9kMz0iMCIgU2xvdDFfbW9kMj0iMCIgT2N0YXZlX21vZDQ9IjAiIE9jdGF2ZV9t
+b2QzPSIwIiBPY3RhdmVfbW9kMj0iMCIgT2N0YXZlX21vZDE9IjAiIEFsdGVybmF0b3JfbW9kND0iMCIgQWx0ZXJuYXRvcl9tb2QzPSIwIiBBbHRlcm5hdG9y
+X21vZDI9Ii0xIiBBbHRlcm5hdG9yX21vZDE9Ii0xIiBGTV9tb2Q0PSItMSIgRk1fbW9kMz0iLTEiIEZNX21vZDI9Ii0xIiBGTV9tb2QxPSItMSIgSGFybW9u
+aWNzX21vZDQ9Ii0xIiBIYXJtb25pY3NfbW9kMz0iLTEiIEhhcm1vbmljc19tb2QyPSItMSIgSGFybW9uaWNzX21vZDE9Ii0xIiBSYXRpb19tb2Q0PSItMSIg
+UmF0aW9fbW9kMz0iLTEiIFJhdGlvX21vZDI9Ii0xIiBSYXRpb19tb2QxPSItMSIgUGl0Y2hfbW9kND0iLTEiIFBpdGNoX21vZDM9Ii0xIiBQaXRjaF9tb2Qy
+PSItMSIgUGl0Y2hfbW9kMT0iLTEiIEZvcm1hbnRfbW9kND0iLTEiIEZvcm1hbnRfbW9kMz0iLTEiIEZvcm1hbnRfbW9kMj0iLTEiIEZvcm1hbnRfbW9kMT0i
+LTEiIFNtb290aD0iMCIgR2xpZGU9IjAiIERldHVuZT0iMCIgU21lYXI9IjAiIFN0ZXJlbz0iMC4xMTkxMTc2NDc0MDk0MzkwOSIgV2V0ZHJ5PSIwIiBPY3Rh
+dmU9IjAiIEFsdGVybmF0b3I9IjAiIEZNPSIwIiBIYXJtb25pY3M9Ii0xIiBSYXRpbz0iMCIgUGl0Y2g9Ii0xIiBGb3JtYW50PSItMSIgTWV0YUtub2IxTmFt
+ZT0iTWV0YSBLbm9iIiBNZXRhS25vYjJOYW1lPSJNZXRhIEtub2IiIE1ldGFLbm9iM05hbWU9Ik1ldGEgS25vYiIgTWV0YUtub2I0TmFtZT0iTWV0YSBLbm9i
+IiBuYW1lPSJJbml0Ii8+AA==
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Wider -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Wider</Name>
+   <Binary>/home/a/.vst/yabridge/WiderV2.so</Binary>
+   <UniqueID>1349932914</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x9</Options>
+
+   <Chunk>
+nJubPQAAgL8AAAAAAAAAAA==
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- DeeCrystal -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>DeeCrystal</Name>
+   <Binary>/home/a/.vst/yabridge/clear.so</Binary>
+   <UniqueID>1198615408</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>1.27</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x9</Options>
+
+   <Chunk>
+VkMyIXQAAAA8P3htbCB2ZXJzaW9uPSIxLjAiIGVuY29kaW5nPSJVVEYtOCI/PiA8TVlQTFVHSU5TRVRUSU5HUyBkYkVuYWJsZT0iMCIgZGJQYXJhbTE9IjEu
+MCIgZGJQYXJhbTI9IjEuMCIgZGJQYXJhbTM9IjEuMCIvPgA=
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <!-- Pitchproof -->
+ <Plugin>
+  <Info>
+   <Type>VST2</Type>
+   <Name>Pitchproof</Name>
+   <Binary>/home/a/.vst/yabridge/pitchproof-x64.so</Binary>
+   <UniqueID>1886417519</UniqueID>
+  </Info>
+
+  <Data>
+   <Active>Yes</Active>
+   <Volume>1.27</Volume>
+   <ControlChannel>1</ControlChannel>
+   <Options>0x3f9</Options>
+
+   <Chunk>
+MC4wMDAsMC4wNTYsMC4wMzMsMC4wMDAsMS4wMDAsMC4wMDAsMC4wMDAsMC4wMDAA
+   </Chunk>
+  </Data>
+ </Plugin>
+
+ <ExternalPatchbay>
+  <Connection>
+   <Source>FHD Camera Microphone Analog Stereo:capture_FL</Source>
+   <Target>Elgato Wave:3 VST2 Capture:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>FHD Camera Microphone Analog Stereo:capture_FR</Source>
+   <Target>Elgato Wave:3 VST2 Capture:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Elgato Wave 3 Mono:capture_MONO</Source>
+   <Target>OpenWave/OpenWave capture keepalive:input_MONO</Target>
+  </Connection>
+  <Connection>
+   <Source>Elgato Wave 3 Mono:capture_MONO</Source>
+   <Target>OpenWave/OpenWave level meter (src:c40686c774c0):input_MONO</Target>
+  </Connection>
+  <Connection>
+   <Source>Elgato Wave 3 Mono:capture_MONO</Source>
+   <Target>OpenWave/OpenWave FX: wave3 (capture):input_MONO</Target>
+  </Connection>
+  <Connection>
+   <Source>Elgato Wave:3 VST2:capture_FL</Source>
+   <Target>OpenWave/OpenWave level meter (src:e12f5ede454c):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Elgato Wave:3 VST2:capture_FL</Source>
+   <Target>pw-loopback-49549:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Elgato Wave:3 VST2:capture_FR</Source>
+   <Target>OpenWave/OpenWave level meter (src:e12f5ede454c):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Elgato Wave:3 VST2:capture_FR</Source>
+   <Target>pw-loopback-49549:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Carla:audio-out1</Source>
+   <Target>Elgato Wave:3 VST2 Capture:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Carla:audio-out2</Source>
+   <Target>Elgato Wave:3 VST2 Capture:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave/OpenWave FX: wave3:capture_MONO</Source>
+   <Target>pw-loopback-2974:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave/OpenWave FX: wave3:capture_MONO</Source>
+   <Target>pw-loopback-2974:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave/OpenWave FX: wave3:capture_MONO</Source>
+   <Target>Carla:audio-in1</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave/OpenWave FX: wave3:capture_MONO</Source>
+   <Target>Carla:audio-in2</Target>
+  </Connection>
+  <Connection>
+   <Source>pw-loopback-49549:output_FL</Source>
+   <Target>OpenWave Personal Mix:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>pw-loopback-49549:output_FR</Source>
+   <Target>OpenWave Personal Mix:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>pw-loopback-2978:output_FL</Source>
+   <Target>Elgato Wave 3 Analog Stereo:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>pw-loopback-2978:output_FR</Source>
+   <Target>Elgato Wave 3 Analog Stereo:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>pw-loopback-2974:output_FL</Source>
+   <Target>OpenWave Personal Mix:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>pw-loopback-2974:output_FR</Source>
+   <Target>OpenWave Personal Mix:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>LibreWolf:output_FL</Source>
+   <Target>brow:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>LibreWolf:output_FR</Source>
+   <Target>brow:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>pw-loopback-60657:output_FL</Source>
+   <Target>OpenWave Personal Mix:playback_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>pw-loopback-60657:output_FR</Source>
+   <Target>OpenWave Personal Mix:playback_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Personal Mix:monitor_FL</Source>
+   <Target>OpenWave/OpenWave level meter (mix:personal):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Personal Mix:monitor_FL</Source>
+   <Target>pw-loopback-2976:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Personal Mix:monitor_FL</Source>
+   <Target>pw-loopback-2978:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Personal Mix:monitor_FR</Source>
+   <Target>OpenWave/OpenWave level meter (mix:personal):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Personal Mix:monitor_FR</Source>
+   <Target>pw-loopback-2976:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Personal Mix:monitor_FR</Source>
+   <Target>pw-loopback-2978:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Record Mix:monitor_FL</Source>
+   <Target>OpenWave/OpenWave level meter (mix:record):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Record Mix:monitor_FL</Source>
+   <Target>pw-loopback-2982:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Record Mix:monitor_FR</Source>
+   <Target>OpenWave/OpenWave level meter (mix:record):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>OpenWave Record Mix:monitor_FR</Source>
+   <Target>pw-loopback-2982:input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>Discord:monitor_FL</Source>
+   <Target>OpenWave/OpenWave level meter (src:1b0b12f7374d):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>Discord:monitor_FR</Source>
+   <Target>OpenWave/OpenWave level meter (src:1b0b12f7374d):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>brow:monitor_FL</Source>
+   <Target>OpenWave/OpenWave level meter (src:4405ed31eb2d):input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>brow:monitor_FL</Source>
+   <Target>pw-loopback-60657:input_FL</Target>
+  </Connection>
+  <Connection>
+   <Source>brow:monitor_FR</Source>
+   <Target>OpenWave/OpenWave level meter (src:4405ed31eb2d):input_FR</Target>
+  </Connection>
+  <Connection>
+   <Source>brow:monitor_FR</Source>
+   <Target>pw-loopback-60657:input_FR</Target>
+  </Connection>
+  <Positions>
+   <Position x1="1590" y1="1139">
+    <Name>Carla</Name>
+   </Position>
+   <Position x1="1353" y1="1314" x2="2125" y2="1274">
+    <Name>FHD Camera Microphone Analog Stereo</Name>
+   </Position>
+  </Positions>
+ </ExternalPatchbay>
+</CARLA-PROJECT>

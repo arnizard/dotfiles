@@ -1,0 +1,22 @@
+cat > ~/dotfiles/.gitignore <<'EOF'
+# Editor / temporary backups
+*.save
+*.save.*
+*~
+*.swp
+
+# Runtime / cache
+.cache/
+.local/share/
+.local/state/
+
+# Secrets / local overrides
+.env
+.env.*
+*.secret
+*.key
+*.pem
+
+# Old local backups
+hypr-backup/
+EOF

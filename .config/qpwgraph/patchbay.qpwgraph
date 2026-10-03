@@ -1,0 +1,122 @@
+<!DOCTYPE patchbay>
+<patchbay name="patchbay" version="1.0.4">
+ <items>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Personal Mix" port="OpenWave Personal Mix:monitor_FR"/>
+   <input node="OpenWave/OpenWave level meter (mix:personal)" port="OpenWave level meter (mix:personal):input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Record Mix" port="OpenWave Record Mix:monitor_FL"/>
+   <input node="pw-loopback-139336" port="pw-loopback-139336:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Elgato Wave 3 Mono" port="Elgato Wave 3:capture_MONO"/>
+   <input node="OpenWave/OpenWave level meter (src:c40686c774c0)" port="OpenWave level meter (src:c40686c774c0):input_MONO"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Elgato Wave 3 Mono" port="Elgato Wave 3:capture_MONO"/>
+   <input node="OpenWave/OpenWave capture keepalive" port="OpenWave capture keepalive:input_MONO"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="pw-loopback-139332" port="pw-loopback-139332:output_FL"/>
+   <input node="Elgato Wave 3 Analog Stereo" port="Elgato Wave 3:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Personal Mix" port="OpenWave Personal Mix:monitor_FL"/>
+   <input node="pw-loopback-139332" port="pw-loopback-139332:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="pw-loopback-139328" port="pw-loopback-139328:output_FR"/>
+   <input node="OpenWave Personal Mix" port="OpenWave Personal Mix:playback_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Carla" port="Carla:audio-out2"/>
+   <input node="Elgato Wave:3 VST2 Capture" port="Elgato Wave:3 VST2 Capture:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Record Mix" port="OpenWave Record Mix:monitor_FR"/>
+   <input node="OpenWave/OpenWave level meter (mix:record)" port="OpenWave level meter (mix:record):input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Carla" port="Carla:audio-out2"/>
+   <input node="Elgato Wave:3 VST2" port="Elgato Wave:3 VST2:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Personal Mix" port="OpenWave Personal Mix:monitor_FR"/>
+   <input node="pw-loopback-139330" port="pw-loopback-139330:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave/OpenWave FX: wave3" port="OpenWave FX: wave3:capture_MONO"/>
+   <input node="Carla" port="Carla:audio-in1"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Chat Mix" port="OpenWave Chat Mix:monitor_FR"/>
+   <input node="OpenWave/OpenWave level meter (mix:chat)" port="OpenWave level meter (mix:chat):input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="pw-loopback-139328" port="pw-loopback-139328:output_FL"/>
+   <input node="OpenWave Personal Mix" port="OpenWave Personal Mix:playback_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Record Mix" port="OpenWave Record Mix:monitor_FL"/>
+   <input node="OpenWave/OpenWave level meter (mix:record)" port="OpenWave level meter (mix:record):input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Elgato Wave 3 Mono" port="Elgato Wave 3:capture_MONO"/>
+   <input node="OpenWave/OpenWave FX: wave3 (capture)" port="OpenWave FX: wave3 (capture):input_MONO"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave/OpenWave FX: wave3" port="OpenWave FX: wave3:capture_MONO"/>
+   <input node="pw-loopback-139328" port="pw-loopback-139328:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Chat Mix" port="OpenWave Chat Mix:monitor_FL"/>
+   <input node="OpenWave/OpenWave level meter (mix:chat)" port="OpenWave level meter (mix:chat):input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Personal Mix" port="OpenWave Personal Mix:monitor_FL"/>
+   <input node="OpenWave/OpenWave level meter (mix:personal)" port="OpenWave level meter (mix:personal):input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave/OpenWave FX: wave3" port="OpenWave FX: wave3:capture_MONO"/>
+   <input node="pw-loopback-139328" port="pw-loopback-139328:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Personal Mix" port="OpenWave Personal Mix:monitor_FR"/>
+   <input node="pw-loopback-139332" port="pw-loopback-139332:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Chat Mix" port="OpenWave Chat Mix:monitor_FL"/>
+   <input node="pw-loopback-139334" port="pw-loopback-139334:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Carla" port="Carla:audio-out1"/>
+   <input node="Elgato Wave:3 VST2" port="Elgato Wave:3 VST2:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave/OpenWave FX: wave3" port="OpenWave FX: wave3:capture_MONO"/>
+   <input node="Carla" port="Carla:audio-in2"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Personal Mix" port="OpenWave Personal Mix:monitor_FL"/>
+   <input node="pw-loopback-139330" port="pw-loopback-139330:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Record Mix" port="OpenWave Record Mix:monitor_FR"/>
+   <input node="pw-loopback-139336" port="pw-loopback-139336:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="OpenWave Chat Mix" port="OpenWave Chat Mix:monitor_FR"/>
+   <input node="pw-loopback-139334" port="pw-loopback-139334:input_FR"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="Carla" port="Carla:audio-out1"/>
+   <input node="Elgato Wave:3 VST2 Capture" port="Elgato Wave:3 VST2 Capture:input_FL"/>
+  </item>
+  <item node-type="pipewire" port-type="pipewire-audio">
+   <output node="pw-loopback-139332" port="pw-loopback-139332:output_FR"/>
+   <input node="Elgato Wave 3 Analog Stereo" port="Elgato Wave 3:playback_FR"/>
+  </item>
+ </items>
+</patchbay>
+

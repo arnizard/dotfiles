@@ -1,0 +1,172 @@
+/* Gruvbox Dark */
+@define-color bg      #282828;
+@define-color bg_dark #1d2021;
+@define-color surface #3c3836;
+@define-color subtle  #504945;
+@define-color fg      #ebdbb2;
+@define-color gray    #928374;
+@define-color accent  #fe8019;
+@define-color yellow  #fabd2f;
+@define-color red     #fb4934;
+@define-color green   #b8bb26;
+@define-color aqua    #8ec07c;
+
+* {
+    font-family: "JetBrainsMono Nerd Font", FontAwesome, Adwaita, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    transition-property: background-color, color;
+    transition-duration: .3s;
+}
+
+window#waybar {
+    background-color: rgba(29, 32, 33, 0.85);
+    color: @fg;
+}
+
+window#waybar.hidden {
+    opacity: 0.2;
+}
+
+button {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Workspaces */
+#workspaces button {
+    padding: 0 8px;
+    margin: 4px 2px;
+    border-radius: 6px;
+    background-color: transparent;
+    color: @gray;
+}
+
+#workspaces button:hover {
+    background: @surface;
+    color: @fg;
+}
+
+#workspaces button.focused,
+#workspaces button.active {
+    background-color: @accent;
+    color: @bg_dark;
+}
+
+#workspaces button.urgent {
+    background-color: @red;
+    color: @bg_dark;
+}
+
+/* Shared module look */
+#custom-launcher,
+#custom-filemanager,
+#custom-terminal,
+#mpris,
+#pulseaudio,
+#tray,
+#battery,
+#clock,
+#custom-power {
+    padding: 0 12px;
+    margin: 4px 2px;
+    border-radius: 6px;
+    background-color: @surface;
+    color: @fg;
+}
+
+/* Launcher buttons */
+#custom-launcher {
+    color: @accent;
+}
+
+#custom-launcher:hover,
+#custom-filemanager:hover,
+#custom-terminal:hover {
+    background-color: @subtle;
+    color: @accent;
+}
+
+/* Window title */
+#window {
+    color: @gray;
+}
+
+/* Media and audio */
+#mpris {
+    color: @aqua;
+}
+
+#mpris:hover,
+#pulseaudio:hover {
+    background-color: @subtle;
+}
+
+#pulseaudio {
+    color: @yellow;
+}
+
+#pulseaudio.muted {
+    color: @red;
+}
+
+/* Clock */
+#clock {
+    background-color: @accent;
+    color: @bg_dark;
+}
+
+#clock:hover {
+    background-color: @yellow;
+}
+
+/* Battery */
+#battery.charging,
+#battery.plugged {
+    color: @green;
+}
+
+#battery.warning:not(.charging) {
+    color: @yellow;
+}
+
+@keyframes blink {
+    to {
+        background-color: @red;
+        color: @bg_dark;
+    }
+}
+
+#battery.critical:not(.charging) {
+    color: @red;
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+/* Power button */
+#custom-power {
+    color: @red;
+}
+
+#custom-power:hover {
+    background-color: @red;
+    color: @bg_dark;
+}
+
+/* Tray */
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+    background-color: @red;
+}
+
+label:focus {
+    background-color: @bg_dark;
+}

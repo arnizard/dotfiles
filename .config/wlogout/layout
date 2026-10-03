@@ -1,0 +1,31 @@
+{
+    "label" : "lock",
+    "action" : "loginctl lock-session",
+    "text" : "Lock",
+    "keybind" : "l"
+}
+"action" : "command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'",
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "Shutdown",
+    "keybind" : "s"
+}
+{
+    "label" : "suspend",
+    "action" : "systemctl suspend",
+    "text" : "Suspend",
+    "keybind" : "u"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "Reboot",
+    "keybind" : "r"
+}
+{
+    "label" : "restartwaybar",
+    "action" : "~/.config/waybar/waybar.sh",
+    "text" : "Restart Waybar",
+    "keybind" : "w"
+}
