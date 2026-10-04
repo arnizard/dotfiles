@@ -1,3 +1,4 @@
+7zip
 accountsservice
 alacritty
 alsa-firmware
@@ -20,6 +21,7 @@ breeze-icons
 btop
 btrfs-progs
 cachyos-fish-config
+cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
 cachyos-kernel-manager
@@ -39,6 +41,8 @@ calf
 cantarell-fonts
 carla
 chwd
+claude-code
+code
 cpupower
 cryptsetup
 curseforge
@@ -62,11 +66,14 @@ exodus
 f2fs-tools
 fastfetch
 ffmpegthumbnailer
+firefox
 flameshot
+flatpak
 fsarchiver
 fuzzel
 geeqie
 git
+github-cli
 grimblast-git
 gruvbox-dark-gtk
 gruvbox-dark-icons-gtk
@@ -180,8 +187,10 @@ rsync
 rustup
 s-nail
 sbctl
+seahorse
 sg3_utils
 shelly
+shelly-flatpak-backend
 smartmontools
 sof-firmware
 starship
@@ -226,3 +235,4 @@ xfsprogs
 xl2tpd
 yabridge
 yabridgectl
+zip

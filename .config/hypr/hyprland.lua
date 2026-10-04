@@ -67,6 +67,7 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd([[sh -c 'while true; do hyprpaper; sleep 2; done']])
   hl.exec_cmd("wl-paste --watch cliphist store")
   hl.exec_cmd("sh -c '$HOME/.local/bin/audio-start.sh'")
+  hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
   
   hl.exec_cmd("discord")
   hl.exec_cmd("steam")
@@ -267,8 +268,8 @@ for i = 1, 10 do
 end
 
 -- Example special workspace (scratchpad)
-hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
-hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
+-- hl.bind(mainMod .. " + S",         hl.dsp.workspace.toggle_special("magic"))
+-- hl.bind(mainMod .. " + SHIFT + S", hl.dsp.window.move({ workspace = "special:magic" }))
 
 -- Scroll through existing workspaces with mainMod + scroll
 hl.bind(mainMod .. " + mouse_down", hl.dsp.focus({ workspace = "e+1" }))
