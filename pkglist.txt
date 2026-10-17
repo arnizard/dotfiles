@@ -12,6 +12,7 @@ base
 base-devel
 bash-completion
 bind
+blender
 bluez
 bluez-hid2hci
 bluez-libs
@@ -21,6 +22,7 @@ breeze-icons
 btop
 btrfs-progs
 cachyos-fish-config
+cachyos-gaming-applications
 cachyos-gaming-meta
 cachyos-hello
 cachyos-hooks
@@ -45,7 +47,7 @@ claude-code
 code
 cpupower
 cryptsetup
-curseforge
+davinci-resolve
 device-mapper
 diffutils
 discord
@@ -60,18 +62,19 @@ easyeffects
 efibootmgr
 efitools
 egl-wayland
+etcher-bin
 ethtool
 exfatprogs
 exodus
 f2fs-tools
 fastfetch
 ffmpegthumbnailer
-firefox
 flameshot
 flatpak
 fsarchiver
 fuzzel
 geeqie
+gimp
 git
 github-cli
 grimblast-git
@@ -81,7 +84,6 @@ gst-libav
 gst-plugin-pipewire
 gst-plugins-bad
 gst-plugins-ugly
-hayase-desktop-bin
 hdparm
 helvum
 hwdetect

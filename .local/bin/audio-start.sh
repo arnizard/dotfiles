@@ -1,5 +1,8 @@
 #!/bin/sh
 
+exec >"$HOME/audio-start.log" 2>&1
+set -x
+
 # Wait up to 60 seconds for a PipeWire port matching $1
 wait_for() {
   for i in $(seq 1 60); do

@@ -35,8 +35,9 @@ hl.monitor({ output = "DP-2", mode = "1920x1080@165", position = "1920x0", scale
 hl.monitor({ output = "HDMI-A-1", mode = "1920x1080@60", position = "3840x0", scale = 1 })
 
 
-
-
+hl.workspace_rule({ workspace = "1", monitor = "DP-2", default = true })
+hl.workspace_rule({ workspace = "2", monitor = "HDMI-A-1", default = true })
+hl.workspace_rule({ workspace = "3", monitor = "DP-1", default = true })
 ---------------------
 ---- MY PROGRAMS ----
 ---------------------
@@ -69,8 +70,17 @@ hl.on("hyprland.start", function ()
   hl.exec_cmd("sh -c '$HOME/.local/bin/audio-start.sh'")
   hl.exec_cmd("gnome-keyring-daemon --start --components=secrets")
   
+  hl.exec_cmd("protonvpn connect AD#37")
+  
+  hl.exec_cmd("obs")
   hl.exec_cmd("discord")
   hl.exec_cmd("steam")
+  hl.exec_cmd("alacritty")
+  
+  hl.window_rule({ match = { class = "^(com\\.obsproject\\.Studio)$" }, workspace = "3 silent" })
+  hl.window_rule({ match = { class = "^(discord)$" },                   workspace = "2 silent" })
+  hl.window_rule({ match = { class = "^(steam)$" },                     workspace = "3 silent" })
+  hl.window_rule({ match = { class = "^(Alacritty)$" },                 workspace = "1 silent" })
 end)
 
 -------------------------------
@@ -142,7 +152,6 @@ hl.config({
 })
 
 -- Default curves and animations, see https://wiki.hypr.land/Configuring/Advanced-and-Cool/Animations/
-
 
 -- Ref https://wiki.hypr.land/Configuring/Basics/Workspace-Rules/
 -- "Smart gaps" / "No gaps when only"
@@ -238,6 +247,7 @@ hl.device({
 -- Example binds, see https://wiki.hypr.land/Configuring/Basics/Binds/ for more
 local mainMod = "SUPER"
 
+hl.bind(mainMod .. " + F", hl.dsp.window.fullscreen({ action = "toggle" }))
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(filemanager))
@@ -249,6 +259,12 @@ hl.bind(mainMod .. " + L", hl.dsp.exec_cmd(lockscreen))
 hl.bind("F2", hl.dsp.exec_cmd("amixer -q -c Wave3 cset numid=5 on"))
 hl.bind("F2", hl.dsp.exec_cmd("amixer -q -c Wave3 cset numid=5 off"), { release = true })
 
+-- OBS
+hl.bind("Page_Up", hl.dsp.pass({ window = [[class:com\.obsproject\.Studio]] }))
+hl.bind("Page_Down", hl.dsp.pass({ window = [[class:com\.obsproject\.Studio]] }))
+
+-- Restore focus
+hl.bind("SUPER + F1", hl.dsp.exec_cmd([[sh -c "hyprctl dispatch 'hl.dsp.focus({ last = true })'; sleep 0.1; hyprctl dispatch 'hl.dsp.focus({ last = true })'"]]))
 
 -- Screenshotting
 hl.bind("SUPER + SHIFT + S", hl.dsp.exec_cmd([[sh -c 'grim -g "$(slurp)" - | wl-copy']]))
